@@ -53,7 +53,8 @@
 
                               <!-- first card -->
 
-                              <div class="rounded-t-lg  w-[342px] h-[350px]  bg-base-100 shadow-xl border my-5 mx-auto">
+                              <div onclick="handleClick(this)"
+                                    class="rounded-t-lg  w-[342px] h-[350px]  bg-base-100 shadow-xl border my-5 mx-auto">
                                     <figure class="bg-[#1111110D] m-4 py-6 "><img class="mx-auto "
                                                 src="/images/prod1.png" alt="Shoes" />
                                     </figure>
@@ -67,12 +68,13 @@
                                     </div>
                                     <div class="card-body mt-2">
                                           <h2 class="card-title mx-auto">K. Accessories</h2>
-                                          <p class="mx-auto">39.00 TK</p>
+                                          <p class="mx-auto"><span class="first-card-money">39.00</span> TK</p>
 
                                     </div>
                               </div>
                               <!-- second card -->
-                              <div class="rounded-t-lg  w-[342px] h-[350px] bg-base-100 shadow-xl border my-5 mx-auto">
+                              <div onclick="handleClick(this)"
+                                    class="rounded-t-lg  w-[342px] h-[350px] bg-base-100 shadow-xl border my-5 mx-auto">
                                     <figure class="bg-[#1111110D] m-4 py-6 "><img class="mx-auto w-[151px] h-[136px]"
                                                 src="/images/prod2.png" alt="Shoes" />
                                     </figure>
@@ -84,14 +86,15 @@
                                           <i class="fa-regular fa-star text-[#FFC107]"></i>
 
                                     </div>
-                                    <div class="card-body">
+                                    <div class="card-body mt-2">
                                           <h2 class="card-title mx-auto">Wood Accessories</h2>
                                           <p class="mx-auto">25.00 TK</p>
 
                                     </div>
                               </div>
                               <!-- third card -->
-                              <div class="rounded-t-lg  w-[342px] h-[350px] bg-base-100 shadow-xl border my-5 mx-auto">
+                              <div onclick="handleClick(this)"
+                                    class="rounded-t-lg  w-[342px] h-[350px] bg-base-100 shadow-xl border my-5 mx-auto">
                                     <figure class="bg-[#1111110D] m-4 py-6 "><img class="mx-auto"
                                                 src="/images/prod3.png" alt="Shoes" />
                                     </figure>
@@ -103,7 +106,7 @@
                                           <i class="fa-regular fa-star text-[#FFC107]"></i>
 
                                     </div>
-                                    <div class="card-body">
+                                    <div class="card-body mt-2">
                                           <h2 class="card-title mx-auto">Home Cooker</h2>
                                           <p class="mx-auto">49.00 TK</p>
                                     </div>
@@ -115,16 +118,16 @@
 
 
                   <!-- coupon side and calculation side -->
-                  <div class="lg:mr-44 mx-auto border my-[61px] bg-[#fff] w-[342px] h-[148px]">
+                  <div class="lg:mr-44 mx-auto border my-[63px] bg-[#fff] w-[342px] h-[148px]">
                         <h1 class="ml-7 mt-5 mb-5">Have coupon?</h1>
                         <div class="ml-7">
                               <label for="hs-trailing-button-add-on" class="sr-only">Label</label>
                               <div class="flex rounded-md shadow-sm">
-                                    <input type="text" placeholder="Coupon Code" id="hs-trailing-button-add-on"
-                                          name="hs-trailing-button-add-on"
+                                    <input disabled=true type="text" placeholder="Coupon Code"
+                                          id="hs-trailing-button-add-on" name="hs-trailing-button-add-on"
                                           class="py-3 px-4 block w-md border-gray-200 shadow-sm rounded-l-md text-sm focus:z-10  border-[1px] ">
-                                    <button type="button"
-                                          class="py-3 px-4 inline-flex flex-shrink-0 justify-center items-center gap-2 rounded-r-md border border-transparent font-semibold bg-[#E527B2] text-white hover:bg-pink-400 focus:z-10 focus:outline-none focus:ring-2 focus:bg-[#E527B2] transition-all text-sm">
+                                    <button type="button" disabled=true
+                                          class="py-3 px-4 inline-flex flex-shrink-0 justify-center  items-center gap-2 rounded-r-md border border-transparent font-semibold bg-[#E527B2] text-white hover:bg-pink-400 focus:z-10 focus:outline-none focus:ring-2 focus:bg-[#E527B2] transition-all text-sm">
                                           Apply
                                     </button>
                               </div>
@@ -135,14 +138,15 @@
             </div>
 
 
-            <div class="flex flex-col lg:flex-row mt-24">
+            <div class="flex flex-col lg:flex-row mt-8">
                   <div class="mx-auto">
                         <h2 class="text-4xl font-semibold">Sportswear</h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-1 gap-5">
 
                               <!-- fourth card -->
 
-                              <div class="rounded-t-lg  w-[342px] h-[350px]  bg-base-100 shadow-xl border my-5 mx-auto">
+                              <div onclick="handleClick(this)"
+                                    class="rounded-t-lg  w-[342px] h-[350px]  bg-base-100 shadow-xl border my-5 mx-auto">
                                     <figure class="bg-[#1111110D] m-4 py-6 "><img class="mx-auto"
                                                 src="/images/prod4.png" alt="Shoes" />
                                     </figure>
@@ -154,14 +158,15 @@
                                           <i class="fa-regular fa-star text-[#FFC107]"></i>
 
                                     </div>
-                                    <div class="card-body">
+                                    <div class="card-body mt-3">
                                           <h2 class="card-title mx-auto ">Sports Back Cap</h2>
                                           <p class="mx-auto">49.00 TK</p>
 
                                     </div>
                               </div>
                               <!-- fifth card -->
-                              <div class="rounded-t-lg  w-[342px] h-[350px] bg-base-100 shadow-xl border my-5 mx-auto">
+                              <div onclick="handleClick(this)"
+                                    class="rounded-t-lg  w-[342px] h-[350px] bg-base-100 shadow-xl border my-5 mx-auto">
                                     <figure class="bg-[#1111110D] m-4 py-6 "><img class="mx-auto w-[163px] h-[128px]"
                                                 src="/images/prod5.png" alt="Shoes" />
                                     </figure>
@@ -173,14 +178,15 @@
                                           <i class="fa-regular fa-star text-[#FFC107]"></i>
 
                                     </div>
-                                    <div class="card-body">
+                                    <div class="card-body mt-3">
                                           <h2 class="card-title mx-auto">Full Jersey Set</h2>
                                           <p class="mx-auto">69.00 TK</p>
 
                                     </div>
                               </div>
                               <!-- sixth card -->
-                              <div class="rounded-t-lg  w-[342px] h-[350px] bg-base-100 shadow-xl border my-5 mx-auto">
+                              <div onclick="handleClick(this)"
+                                    class="rounded-t-lg  w-[342px] h-[350px] bg-base-100 shadow-xl border my-5 mx-auto">
                                     <figure class="bg-[#1111110D] m-4 py-6 "><img class="mx-auto w-[146px] h-[128px]"
                                                 src="/images/prod6.png" alt="Shoes" />
                                     </figure>
@@ -192,7 +198,7 @@
                                           <i class="fa-regular fa-star text-[#FFC107]"></i>
 
                                     </div>
-                                    <div class="card-body">
+                                    <div class="card-body mt-3">
                                           <h2 class="card-title mx-auto">Sports cates</h2>
                                           <p class="mx-auto">159.00 TK</p>
                                     </div>
@@ -204,16 +210,27 @@
 
 
                   <!-- coupon side and calculation side -->
-                  <div
-                        class="lg:mr-44 mx-auto border my-[61px] bg-[#fff] w-[342px] h-[250px] mb-96 lg:relative lg:bottom-72">
-                        <h1 class="ml-7 mt-5 mb-5">Total Price: <span>00</span></h1>
-                        <h1 class="ml-7 mt-5 mb-5">Discount: <span>00</span></h1>
-                        <h1 class="ml-7 mt-5 mb-5">Total: <span>00</span></h1>
-                        <hr class="h-px w-72 mx-auto bg-gray-200 border-0 dark:bg-gray-700">
 
-                        <button type="button"
-                              class="py-3 px-4 mt-16 inline-flex flex-shrink-0 justify-center items-center gap-2 w-[310px] ml-4 border border-transparent font-semibold bg-[#E527B2] text-white hover:bg-pink-400 focus:z-10 focus:outline-none focus:ring-2 focus:bg-[#E527B2] transition-all text-sm">
-                              Apply
+                  <div class="lg:mr-44 mx-auto border my-[61px] bg-[#fff] w-[342px] mb-96 lg:relative lg:bottom-64">
+                        <div class="pt-[20px]">
+
+                              <div class="">
+                                    <div class="selected-items pl-7 " id="selected-items">
+
+
+                                    </div>
+                                    <hr class="h-px w-72 mx-auto bg-gray-200 border-0 dark:bg-gray-700">
+                                    <h1 class="ml-7 mt-5 mb-5">Total Price: <span><span>00</span>TK</span></h1>
+                                    <h1 class="ml-7 mt-5 mb-5">Discount: <span><span>00</span>TK</span></h1>
+                                    <h1 class="ml-7 mt-5 mb-5">Total: <span> <span>00</span>TK</span></h1>
+                                    <hr class="h-px w-72 mx-auto bg-gray-200 border-0 dark:bg-gray-700">
+                              </div>
+                        </div>
+
+
+                        <button type="button" disabled=true
+                              class="relative top-5 py-3 px-4 mt-20 inline-flex flex-shrink-0 justify-center items-center gap-2 w-[310px] ml-4 border rounded-md border-transparent font-semibold bg-[#E527B2] text-white hover:bg-pink-400 focus:z-10 focus:outline-none focus:ring-2 focus:bg-[#E527B2] transition-all text-sm">
+                              Make Purchase
                         </button>
 
                   </div>
