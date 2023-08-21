@@ -78,12 +78,6 @@ function refreshPage() {
       window.location.reload();
 }
 
-// No dragging img
-const img = document.querySelector("img");
-img.ondragstart = () => {
-      return false;
-};
-
 
 
 // another just like same form;
