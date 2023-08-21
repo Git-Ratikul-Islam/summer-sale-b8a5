@@ -226,15 +226,19 @@
                                     <h1 class="ml-7 mt-5 mb-5">Total Price: <span id="total-price">00</span>
                                           <span>TK</span>
                                     </h1>
-                                    <h1 class="ml-7 mt-5 mb-5">Discount: <span
-                                                id="discount-amount"><span>00</span><span>TK</span></h1>
+                                    <h1 class="ml-7 mt-5 mb-5">Discount: <span id="discount-amount"><span
+                                                      class="span-discount">00 </span><span>TK</span></h1>
                                     <h1 class="ml-7 mt-5 mb-5">Total: <span id="total-amount-final"> <span
-                                                      id="total-amount">00</span>TK
+                                                      class="total-span-discount">00 </span>TK
 
                                     </h1>
                                     <hr class="h-px w-72 mx-auto bg-gray-200 border-0 dark:bg-gray-700">
                               </div>
                         </div>
+
+                        <!-- Make purchase and if it is clicked it will open a modal -->
+
+
                         <button
                               class="relative cursor-pointer make-purchase-button top-5 py-3 px-4 mt-20 inline-flex flex-shrink-0 justify-center items-center gap-2 w-[310px] ml-4 border rounded-md border-transparent font-semibold bg-[#E527B2] text-white hover:bg-pink-400 focus:z-10 focus:outline-none focus:ring-2 focus:bg-[#E527B2] transition-all text-sm"
                               onclick="my_modal_1.showModal()">Make Purchase</button>
@@ -245,12 +249,14 @@
                                     <p class="py-4 text-center">Your Purchase the product</p>
                                     <div class="modal-action" id="myModal">
                                           <!-- if there is a button in form, it will close the modal -->
-                                          <button id="modalButton"
+                                          <button onclick="refreshPage()" id="modalButton"
                                                 class="mx-auto btn btn-primary btn-sell-color text-white bg-[#E527B2] border-none hover:bg-pink-400 focus:z-10 focus:outline-none focus:ring-2 focus:bg-[#E527B2] transition-all">Go
                                                 Home</button>
                                     </div>
                               </form>
                         </dialog>
+
+
 
 
                         <!-- <button type="button"

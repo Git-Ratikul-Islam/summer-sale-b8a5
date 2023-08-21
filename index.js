@@ -51,8 +51,8 @@ function applyCoupon() {
             const discountTotal = total - discount;
             // total -= discount;
             // document.getElementById("total-price").innerText = total.toFixed(2);
-            document.getElementById("total-amount-final").innerText = discountTotal.toFixed(2);
-            document.getElementById("discount-amount").innerText = discount.toFixed(2);
+            document.querySelector(".total-span-discount").innerText = discountTotal.toFixed(2);
+            document.querySelector(".span-discount").innerText = discount.toFixed(2);
       }
       couponInput.value = "";
       updateButtonAndCouponStatus();
@@ -71,26 +71,18 @@ document.getElementById("my_modal_1").addEventListener("click", function () {
 updateButtonAndCouponStatus();
 
 
-// Modal Home Refresh One 
-const modal = document.getElementById('myModal');
-const modalButton = document.getElementById('modalButton').addEventListener('click', function () {
-      modal.style.display = 'none';
-      window.location.href = 'http://127.0.0.1:5500/index.html';
-});
 
+// If Go Home button is clicked it will refreshPage
 
-window.addEventListener('click', function (event) {
-      if (event.target === modal) {
-            modal.style.display = 'none';
-      }
-});
+function refreshPage() {
+      window.location.reload();
+}
 
 
 
 
 
-
-// another just like same form
+// another just like same form;
 // const modal = document.getElementById('myModal');
 // const modalButton = document.getElementById('modalButton');
 
@@ -109,10 +101,19 @@ window.addEventListener('click', function (event) {
 
 
 
+// Modal Home Refresh One
+// const modal = document.getElementById('myModal');
+// const modalButton = document.getElementById('modalButton').addEventListener('click', function () {
+//       modal.style.display = 'none';
+//       window.location.href = 'http://127.0.0.1:5500/index.html';
+// });
 
 
-
-
+// window.addEventListener('click', function (event) {
+//       if (event.target === modal) {
+//             modal.style.display = 'none';
+//       }
+// });
 
 
 
