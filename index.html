@@ -53,7 +53,7 @@
 
                               <!-- first card -->
 
-                              <div onclick="handleClick(this)"
+                              <div onclick="handleClick(this)" id="first-card-div"
                                     class="rounded-t-lg  w-[342px] h-[350px]  bg-base-100 shadow-xl border my-5 mx-auto">
                                     <figure class="bg-[#1111110D] m-4 py-6 "><img class="mx-auto "
                                                 src="/images/prod1.png" alt="Shoes" />
@@ -68,12 +68,12 @@
                                     </div>
                                     <div class="card-body mt-2">
                                           <h2 class="card-title mx-auto">K. Accessories</h2>
-                                          <p class="mx-auto"><span class="first-card-money">39.00</span> TK</p>
+                                          <p class="mx-auto"><span id="first-card-money">39.00</span> TK</p>
 
                                     </div>
                               </div>
                               <!-- second card -->
-                              <div onclick="handleClick(this)"
+                              <div id="second-card-div" onclick="handleClick(this)"
                                     class="rounded-t-lg  w-[342px] h-[350px] bg-base-100 shadow-xl border my-5 mx-auto">
                                     <figure class="bg-[#1111110D] m-4 py-6 "><img class="mx-auto w-[151px] h-[136px]"
                                                 src="/images/prod2.png" alt="Shoes" />
@@ -88,7 +88,7 @@
                                     </div>
                                     <div class="card-body mt-2">
                                           <h2 class="card-title mx-auto">Wood Accessories</h2>
-                                          <p class="mx-auto">25.00 TK</p>
+                                          <p class="mx-auto"><span id="first-card-money">25.00</span> TK</p>
 
                                     </div>
                               </div>
@@ -108,7 +108,7 @@
                                     </div>
                                     <div class="card-body mt-2">
                                           <h2 class="card-title mx-auto">Home Cooker</h2>
-                                          <p class="mx-auto">49.00 TK</p>
+                                          <p class="mx-auto"><span id="first-card-money">49.00</span> TK</p>
                                     </div>
                               </div>
 
@@ -123,11 +123,11 @@
                         <div class="ml-7">
                               <label for="hs-trailing-button-add-on" class="sr-only">Label</label>
                               <div class="flex rounded-md shadow-sm">
-                                    <input disabled=true type="text" placeholder="Coupon Code"
-                                          id="hs-trailing-button-add-on" name="hs-trailing-button-add-on"
-                                          class="py-3 px-4 block w-md border-gray-200 shadow-sm rounded-l-md text-sm focus:z-10  border-[1px] ">
-                                    <button type="button" disabled=true
-                                          class="py-3 px-4 inline-flex flex-shrink-0 justify-center  items-center gap-2 rounded-r-md border border-transparent font-semibold bg-[#E527B2] text-white hover:bg-pink-400 focus:z-10 focus:outline-none focus:ring-2 focus:bg-[#E527B2] transition-all text-sm">
+                                    <input type="text" placeholder="Coupon Code" id="hs-trailing-button-add-on"
+                                          name="hs-trailing-button-add-on"
+                                          class="cursor-text py-3 px-4 block w-md border-gray-200 shadow-sm rounded-l-md text-sm focus:z-10  border-[1px] ">
+                                    <button type="button"
+                                          class="py-3 coupon-apply-button px-4 inline-flex flex-shrink-0 justify-center  items-center gap-2 rounded-r-md border border-transparent font-semibold bg-[#E527B2] text-white hover:bg-pink-400 focus:z-10 focus:outline-none focus:ring-2 focus:bg-[#E527B2] transition-all text-sm">
                                           Apply
                                     </button>
                               </div>
@@ -160,7 +160,7 @@
                                     </div>
                                     <div class="card-body mt-3">
                                           <h2 class="card-title mx-auto ">Sports Back Cap</h2>
-                                          <p class="mx-auto">49.00 TK</p>
+                                          <p class="mx-auto"><span id="first-card-money">49.00</span> TK</p>
 
                                     </div>
                               </div>
@@ -180,7 +180,7 @@
                                     </div>
                                     <div class="card-body mt-3">
                                           <h2 class="card-title mx-auto">Full Jersey Set</h2>
-                                          <p class="mx-auto">69.00 TK</p>
+                                          <p class="mx-auto"><span id="first-card-money">69.00</span> TK</p>
 
                                     </div>
                               </div>
@@ -200,7 +200,7 @@
                                     </div>
                                     <div class="card-body mt-3">
                                           <h2 class="card-title mx-auto">Sports cates</h2>
-                                          <p class="mx-auto">159.00 TK</p>
+                                          <p class="mx-auto"><span id="first-card-money">159.00</span> TK</p>
                                     </div>
                               </div>
 
@@ -220,18 +220,42 @@
 
                                     </div>
                                     <hr class="h-px w-72 mx-auto bg-gray-200 border-0 dark:bg-gray-700">
-                                    <h1 class="ml-7 mt-5 mb-5">Total Price: <span><span>00</span>TK</span></h1>
-                                    <h1 class="ml-7 mt-5 mb-5">Discount: <span><span>00</span>TK</span></h1>
-                                    <h1 class="ml-7 mt-5 mb-5">Total: <span> <span>00</span>TK</span></h1>
+                                    <h1 class="ml-7 mt-5 mb-5">Total Price: <span id="total-price">00</span>
+                                          <span>TK</span>
+                                    </h1>
+                                    <h1 class="ml-7 mt-5 mb-5">Discount: <span
+                                                id="discount-amount"><span>00</span><span>TK</span></h1>
+                                    <h1 class="ml-7 mt-5 mb-5">Total: <span id="total-amount-final"> <span
+                                                      id="total-amount">00</span>TK
+
+                                    </h1>
                                     <hr class="h-px w-72 mx-auto bg-gray-200 border-0 dark:bg-gray-700">
                               </div>
                         </div>
+                        <button
+                              class="relative cursor-pointer make-purchase-button top-5 py-3 px-4 mt-20 inline-flex flex-shrink-0 justify-center items-center gap-2 w-[310px] ml-4 border rounded-md border-transparent font-semibold bg-[#E527B2] text-white hover:bg-pink-400 focus:z-10 focus:outline-none focus:ring-2 focus:bg-[#E527B2] transition-all text-sm"
+                              onclick="my_modal_1.showModal()">Make Purchase</button>
+                        <dialog id="my_modal_1" class="modal">
+                              <form method="dialog" class="modal-box">
+                                    <img class="mx-auto" src="./images/congo.png" alt="">
+                                    <h3 class="font-bold text-3xl text-center">Congratulations</h3>
+                                    <p class="py-4 text-center">Your Purchase the product</p>
+                                    <div class="modal-action" id="myModal">
+                                          <!-- if there is a button in form, it will close the modal -->
+                                          <button id="modalButton"
+                                                class="mx-auto btn btn-primary btn-sell-color text-white bg-[#E527B2] border-none hover:bg-pink-400 focus:z-10 focus:outline-none focus:ring-2 focus:bg-[#E527B2] transition-all">Go
+                                                Home</button>
+                                    </div>
+                              </form>
+                        </dialog>
 
 
-                        <button type="button" disabled=true
-                              class="relative top-5 py-3 px-4 mt-20 inline-flex flex-shrink-0 justify-center items-center gap-2 w-[310px] ml-4 border rounded-md border-transparent font-semibold bg-[#E527B2] text-white hover:bg-pink-400 focus:z-10 focus:outline-none focus:ring-2 focus:bg-[#E527B2] transition-all text-sm">
+                        <!-- <button type="button"
+                              class="relative cursor-pointer make-purchase-button top-5 py-3 px-4 mt-20 inline-flex flex-shrink-0 justify-center items-center gap-2 w-[310px] ml-4 border rounded-md border-transparent font-semibold bg-[#E527B2] text-white hover:bg-pink-400 focus:z-10 focus:outline-none focus:ring-2 focus:bg-[#E527B2] transition-all text-sm">
                               Make Purchase
-                        </button>
+                        </button> -->
+                        <!-- Open the modal using ID.showModal() method -->
+
 
                   </div>
 
