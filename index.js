@@ -2,6 +2,7 @@ const selectedItems = [];
 let itemCount = 1;
 let total = 0;
 
+// To show serial like 1,2,3
 function handleClick(target) {
       const containerItem = document.getElementById("selected-items");
       const itemName = target.querySelector(".card-title").innerText;
@@ -11,6 +12,7 @@ function handleClick(target) {
       p.innerText = `${itemCount}. ${itemName}`;
       containerItem.appendChild(p);
       itemCount++;
+      //     Ends here To show serial like 1,2,3
 
       selectedItems.push({ name: itemName, price: price });
       total += price;
@@ -67,6 +69,46 @@ document.getElementById("my_modal_1").addEventListener("click", function () {
 
 
 updateButtonAndCouponStatus();
+
+
+// Modal Home Refresh One 
+const modal = document.getElementById('myModal');
+const modalButton = document.getElementById('modalButton').addEventListener('click', function () {
+      modal.style.display = 'none';
+      window.location.href = 'http://127.0.0.1:5500/index.html';
+});
+
+
+window.addEventListener('click', function (event) {
+      if (event.target === modal) {
+            modal.style.display = 'none';
+      }
+});
+
+
+
+
+
+
+// another just like same form
+// const modal = document.getElementById('myModal');
+// const modalButton = document.getElementById('modalButton');
+
+
+// modalButton.addEventListener('click', function () {
+//       modal.style.display = 'none';
+//       window.location.href = 'http://127.0.0.1:5500/index.html';
+// });
+
+
+// window.addEventListener('click', function (event) {
+//       if (event.target === modal) {
+//             modal.style.display = 'none';
+//       }
+// });
+
+
+
 
 
 
@@ -144,22 +186,7 @@ updateButtonAndCouponStatus();
 
 
 
-
-// here is
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// here retrying one
 
 
 
@@ -194,20 +221,6 @@ updateButtonAndCouponStatus();
 //       const newTotalPrice = currentTotalPrice + itemPrice;
 //       totalPriceElement.innerText = newTotalPrice.toFixed(2);
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
